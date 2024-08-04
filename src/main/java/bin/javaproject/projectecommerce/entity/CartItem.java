@@ -15,11 +15,11 @@ public class CartItem {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "uid", nullable = false)
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "product_id", nullable = false)
+    @JoinColumn(name = "pid", nullable = false)
     private Product product;
     @Column(name = "quantity")
     private int quantity;

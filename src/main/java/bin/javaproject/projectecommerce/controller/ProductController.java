@@ -40,8 +40,7 @@ public class ProductController {
                     product.setName(productDetails.getName());
                     product.setDescription(productDetails.getDescription());
                     product.setPrice(productDetails.getPrice());
-                    product.setStock(productDetails.getStock());
-                    product.setImageUrl(productDetails.getImageUrl());
+                    product.setImg(productDetails.getImg());
                     return ResponseEntity.ok(productRepository.save(product));
                 })
                 .orElse(ResponseEntity.notFound().build());

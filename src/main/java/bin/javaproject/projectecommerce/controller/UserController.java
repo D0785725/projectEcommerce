@@ -24,7 +24,7 @@ public class UserController {
     }
 
     // 根據 ID 獲取單個用戶
-    @GetMapping("   /{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         return userRepository.findById(id)
                 .map(user -> ResponseEntity.ok(user))
@@ -42,10 +42,10 @@ public class UserController {
     public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDetails) {
         return userRepository.findById(id)
                 .map(user -> {
-                    user.setUsername(userDetails.getUsername());
-                    user.setEmail(userDetails.getEmail());
-                    user.setAddress(userDetails.getAddress());
-                    user.setPhone(userDetails.getPhone());
+//                    user.setUsername(userDetails.getUsername());
+//                    user.setEmail(userDetails.getEmail());
+//                    user.setAddress(userDetails.getAddress());
+//                    user.setPhone(userDetails.getPhone());
                     return ResponseEntity.ok(userRepository.save(user));
                 })
                 .orElse(ResponseEntity.notFound().build());
