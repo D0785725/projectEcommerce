@@ -38,7 +38,9 @@ PayPal API
 #
 project目的:為了將基本技能收斂在一個點上，以更好的往下一個知識點推進，所以做一個陽春的前後端結合的應用。
 因在環境上有許多side project可以選擇，故選擇用電商平台作為練習的項目。
-學習項目- 
+
+
+學習項目
  - 基於spring框架 收斂spring boot, spring security, spring web 了解之間差異 
  - java上開發撰寫restful api框架
  - 了解JPA和學習使用JDBC提升效能
