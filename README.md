@@ -3,7 +3,8 @@ E-commerce Project
 
 
 基於Spring Boot構建的電子商務平台，支持商品的展示、購物車、訂單管理和支付功能。
-![商品選單](https://github.com/user-attachments/assets/38e9b25f-11be-4aba-a751-ee8c5e6f58ea)
+![image](https://github.com/user-attachments/assets/2d5934fa-d4da-4f82-9192-93d7bc8fe4eb)
+
 
 主要功能
  - 商品管理：可以查看商品列表，管理商品資訊。
