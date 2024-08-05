@@ -1,4 +1,4 @@
-![擷取](https://github.com/user-attachments/assets/788bebf0-2732-4f45-be02-aa6aa17d9fc1)
+
 E-commerce Project
 
 
@@ -14,7 +14,7 @@ E-commerce Project
 
 
 ![擷取](https://github.com/user-attachments/assets/8b173c84-ba63-4458-a5de-c0b36ccb545b)
-
+![擷取](https://github.com/user-attachments/assets/788bebf0-2732-4f45-be02-aa6aa17d9fc1)
 未來增加功能
  - ELK綁定log管理，每月產生報表
  - 提供搜尋功能
