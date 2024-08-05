@@ -14,7 +14,7 @@ E-commerce Project
  - 用戶管理：管理用戶資訊，包括註冊、登錄、用戶資料修改等。
 
 
-![擷取](https://github.com/user-attachments/assets/8b173c84-ba63-4458-a5de-c0b36ccb545b)
+
 
 未來增加功能
  - ELK綁定log管理，每月產生報表
