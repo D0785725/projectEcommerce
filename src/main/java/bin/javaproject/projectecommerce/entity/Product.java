@@ -27,6 +27,8 @@ public class Product {
 
     @Column(name = "img")
     private String img;
+
+
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "insert_time", nullable = false, updatable = false)
     private Date insertTime;

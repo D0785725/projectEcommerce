@@ -19,7 +19,6 @@ public class UserController {
 
     @GetMapping
     public List<User> getAllUsers() {
-        System.out.println("12324");
         return userRepository.findAll();
     }
 
@@ -42,10 +41,7 @@ public class UserController {
     public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDetails) {
         return userRepository.findById(id)
                 .map(user -> {
-//                    user.setUsername(userDetails.getUsername());
-//                    user.setEmail(userDetails.getEmail());
-//                    user.setAddress(userDetails.getAddress());
-//                    user.setPhone(userDetails.getPhone());
+                    user.setName(userDetails.getName());
                     return ResponseEntity.ok(userRepository.save(user));
                 })
                 .orElse(ResponseEntity.notFound().build());

@@ -1,5 +1,7 @@
 package bin.javaproject.projectecommerce.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,14 +18,19 @@ public class Order {
     @Column(name = "order_id")
     private Long orderId;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "uid", nullable = false)
     private User user;
 
-    @ElementCollection
-    @CollectionTable(name = "order_products", joinColumns = @JoinColumn(name = "order_id"))
-    private List<Integer> productIds;
+    @JsonManagedReference
+    @OneToMany(mappedBy = "order",cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<OrderDetail> orderDetails;
 
+//    @ElementCollection
+//    @CollectionTable(name = "order_products", joinColumns = @JoinColumn(name = "order_id"))
+//    private List<Integer> productIds;
+//
 
     @Column(name="status")
     private String status;
